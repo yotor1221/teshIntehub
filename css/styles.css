@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Section Backgrounds */
+header {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Warm gradient */
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.about {
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* Cool gradient */
+  padding: 50px 20px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects {
+  background: linear-gradient(to right, #43cea2, #185a9d); /* Earthy gradient */
+  padding: 50px 20px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact {
+  background: linear-gradient(to right, #f7971e, #ffd200); /* Bright gradient */
+  padding: 50px 20px;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Smooth Hover Effects */
+button,
+a {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover,
+a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Section Headings */
+h1,
+h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Add Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 1s ease;
+}
+
+/* Projects Section */
+.projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Hover Effects */
+.project:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  header,
+  .about,
+  .projects,
+  .contact {
+    padding: 30px 10px;
+  }
+  .project {
+    margin-bottom: 15px;
+  }
+  h1,
+  h2 {
+    font-size: 1.8rem;
+  }
+}
